@@ -1,0 +1,68 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;/*we can import the google font using link tag and use it 
+    if the font isn't avilable then we can use another font by seperating commas(,)*/
+  }
+
+  p {
+    font-size: 16px;/*we can change the size of the text using this tag*/
+    font-family: monospace;/*to change the font this tag is used */
+  }
+
+  .thick-green-border {
+    border-color: green;/*used for specifying the color of the border*/
+    border-width: 10px;/*width of the given border*/
+    border-style: solid;/*style which you want to give solid ,dotted,dashed,doubled*/
+    border-radius: 10px;/*to round the corners of the border it can be used it may be in
+    pixels or in percentage(px,%)*/
+  }
+
+  .smaller-image {
+    width: 100px;/*we can change the size of the image using widht property*/
+  }
+  .silver-background{
+        background-color: silver;/*to apply the background color for the given class*/
+  }
+</style>
+</head>
+<body>
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <div class="silver-background">
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+  </div>
+
+  <form action="#">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+</body>
+</html>
